@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Blog App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap cdn -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" style="color: aqua;" href="{% url 'index' %}">Daily Blogs of Mathivanan</a>
+      <button onclick="">Dontate</button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% block content %}
+ 
+  {% endblock content %}
+
+  <footer class="py-3 bg-grey">
+    <p class="m-0 text-light text-center ">Copyright &copy; 2022 My Blog App done by Mathivanan </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+{% block content %}
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h3 class=" site-heading my-4 mt-3 text-black"> My Blog </h3>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-8 mt-3 left">
+      {% for i in post %}
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">{{ i.title }}</h2>
+          <p class="card-text text-muted h6">{{ i.author }} | {{ i.created_on}} </p>
+          <p class="card-text">{{i.msg}}</p>
+          {% if i.status %}
+
+            <p class="card-text">Published</p>
+        {% else %}
+            <p class="card-text">Draft</p>
+        {% endif %}
+      
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% block sidebar %} 
+    {% include 'sidebar.html' %} 
+    {% endblock sidebar %}
+  </div>
+</div>
+{%endblock%}
+
