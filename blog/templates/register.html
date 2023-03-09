@@ -26,7 +26,7 @@
 </head>
 <body>
  
-    <form  name='login' action='' method="post">
+    <form  name='login' action='' method="post" style="text-align: center;">
     {% csrf_token %}
     <br/>
       <h1>Sign Up</h1>
@@ -41,7 +41,7 @@
     <label for="Email" >Email</label>
     <input type="email" id="Email" name="email" placeholder="Your Email Id"><br><br>
     <!-- Password: -->
-    <label for="Password">Password/label>
+    <label for="Password">Password</label>
     <input type="password" id="Password" name="pass" placeholder="Password"><br><br>
     <!-- RepeatPassword: -->
     <label for="confirm_password">Confirm Password</label>
@@ -49,9 +49,8 @@
     <label>
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
     </label>
-    <input  class="btn" type="submit" value="Submit" >
-
- 
+    <input  class="btn" type="Submit" value="Submit" >
+    <input class="btn" type="Login"   value="Login"><a style="text-decoration:none" href="login/"></a>
 </form>
 <div  style="color: tomato" class="inputBox">
     {% for message in messages %}

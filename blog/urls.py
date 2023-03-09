@@ -17,9 +17,9 @@ urlpatterns = [
 
     path('index',views.index,name="index"),
     path('detailed/',views.index,name='detailed'),
-    # Here we are assigning the path of our url
-    path("register/",register), 
-    path("",login),
+
+    path("",register), 
+    path("login/",login),
     path("logout/",logout),
 
     # path('', views.signIn),
