@@ -6,5 +6,5 @@
     - He can filter blogs based on Published or not.
     - The user can view the blogs created by the admin.
   
-## The app is alive at 👇
-    [https://mathis-blog.onrender.com/index](https://mathis-blog.onrender.com/index)
+## The app is alive at [MyBlog](https://mathis-blog.onrender.com/index)
+    https://mathis-blog.onrender.com/index
